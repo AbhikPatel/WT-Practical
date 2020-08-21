@@ -1,0 +1,185 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="book.css">
+</head>
+ <body bgcolor="#9AF5EB">
+    <div class="nav">
+
+      <a href="loginform.html" class="log"><b> Log in </b></a>
+      <img class="logo" src="logo2.png">
+      <ul>
+        <li><a href="index.html" > Home </a></li>
+        <li><a href="gal.html"> Gallery </a></li>
+        <li><a href="registration.html" class="current"> Booking </a></li>
+        <li><a href="about"> About Us </a></li>
+        <li><a href="contact.html"> Contact </a></li>
+      </ul>
+
+
+    </div>
+
+ <form name="register" autocomplete="on" id="registration" method="post" action="table.html" onsubmit="return(validate());">
+ <fieldset>
+ <legend>-</legend>
+ <table border="0" align="center">
+   <tr>
+   <td colspan="2">
+   <h1><center><marquee><font color="blue"><i>Booking Enquiry Form</i></font></marquee></center></h1>
+   </td>
+   </tr>
+   <tr>
+   <td><label for="fname"> Full Name:</label></td>
+   <td><input type="text" placeholder="Enter Name" name="name" id="firstname" value="" size="30"/></td>  
+   </tr>
+   <tr>
+   <td>Email id:</td>
+   <td><input type="email" name="mail" id="mail" value="" size="30"/></td>
+   </tr>
+   <br/>
+   <br/>
+   <tr>
+   <td>Phone Number:</td>
+   <td><input type="number" name="no." maxlength="10" id="no." value="" pattern="[o-9]" size="30"/></td>
+   </tr>
+   <tr>
+   <td>Telephone:</td>
+   <td><input type="number" name="no." id="tno."/></td>
+   </tr>
+   <tr>
+   <td>Address:</td><td><textarea name="address" id="addr"  cols="30" rows="5" wrap="hard">
+   Enter your Address
+   </textarea>
+   </td>
+   </tr>
+   <tr>
+   <td>
+   city:
+   </td>
+   <td><input type="text" name="text" id="text" value=""/></td>
+   </tr>
+   <tr>
+   <td>
+  Country:
+   </td>
+   <td><select name="country" id="country">
+   <optgroup label="country">country:
+   <option id="country" value="india">india</option>
+   <option id="country" value="America">America</option>
+   <option id="country" value="Australia">Australia</option>
+   </optgroup>
+   </select>
+   </td>
+   </tr>
+   <tr>
+   <td>
+   With how many guests are you going to check-in?
+   </td>
+   <td>
+   <select name="1" id="1">
+   <option id="1" value="1">1</option>
+   <option id="2" value="2">2</option>
+   <option id="3" value="3">3</option>
+   <option id="4" value="4">4</option>
+   </select>
+   </td>
+   </tr>
+   <tr>
+   <td>
+   No.of Adults:
+   </td>
+   <td>
+   <input type="number" name="number" id="no" value="" size="5"/>
+   </td>
+   </tr>
+   <tr>
+   <td>
+   No.of Children <br/>
+   (aged 6-15):
+   </td>
+   <td> 
+  <input type="number" name="number" id="no" value="" size="5"/>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  No.of Children<br/>
+  (aged 0-5):
+  </td>
+  <td>
+  <input type="number" name="number" id="no" value=""/>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  Room type:
+  </td>
+  <td>
+  <select name="room" id="room">
+  <option id="room" value="-">choose your room</option>
+  <option id="room" value="standard hotel room">standard hotel room</option>
+  <option id="room" value="superior hotel room">superior hotel room</option>
+  <option id="room" value="studio with terrace">studio with terrace</option>
+  <option id="room" value="studio without terrace">studio without terrace</option>
+  <option id="room" value="king studio with balcony">king studio with balcony</option>
+  <option id="room" value="two bedroom apartment">two bedroom apartment</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  Bed layout per room:
+  </td>
+  <td><select name="bed layout per room" id="blroom">
+  <option id="blroom" value="-">select bed layout per room</option>
+  <option id="blroom" value="2 single twin size beds">2 single twin size beds</option>
+  <option id="blroom" value="1 king size bed">1 king size bed</option>
+  </select>
+  </td>
+  </tr>
+  <tr>
+  <td>Extra bed:</td>
+  <td><input type="radio" name="ebed" id="ebed" value="1"/>1
+  <input type="radio" name="ebed" id="ebed" value="2"/>2
+  </td>
+  </tr>
+  <tr>
+  <td>
+ Arrival date:</td>
+ <td><input type="date" placeholder="select date" name="date" id="date" value=""/>
+ </td>
+ </tr>
+ <tr>
+ <td>Departure date:</td>
+ <td><input type="date" placeholder="cal" name="ddate" id="ddate"/>
+ </td>
+ </tr>
+ <tr>
+ <td>Room charge facilities:</td>
+  <td><input type="radio" name="fac" id="fac" value="1"/><u>yes</u>,with signing this form i authorize beach resort to charge to my room<br/>
+  <input type="radio" name="fac" id="fac" value="2"/><u>No</u>,thank you,i will be directly on premises
+  </td>
+  </tr>
+  <tr>
+  <td>Check-out preference:</td>
+  <td><input type="checkbox" id="early" value=""/>Early departure<br/>
+  <input type="checkbox" id="late" value=""/>late departure
+  <tr>
+  <td>
+  <input type="reset" name="reset" id="reset" value="Reset"/>
+  </td>
+  <td>
+  <input type="submit" name="submit" id="submit" value="ok"/>
+  </td>
+  </tr>
+  </table>
+  </fieldset>
+  </form>
+ <h5><small> <p>using this site,you agree to have read and accepted our terms of use,cookie and privacy policy.&#169 copyright 1999-2025 by Refsnes data.<br/>
+  <center>All Rights Reserved.</center>
+  <center>Powered by resort.<br/>
+  <a href="#link" >terms&condition</a></center></p></small></h5>
+ 
+  </body>
+  </html>
+  
+   
